@@ -1,0 +1,112 @@
+# ─────────────────────────────────────────────────────────
+#  Decap CMS config for Yiddish Copywriter portfolio
+#  Docs: https://decapcms.org/docs/configuration-options/
+# ─────────────────────────────────────────────────────────
+
+backend:
+  name: git-gateway        # uses Netlify Identity + Git Gateway
+  branch: main             # change to "master" if your repo uses that
+
+# Uploaded files go here (in your repo)
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+# ─── Collections ──────────────────────────────────────────
+collections:
+
+  # Single file — the whole category + project structure
+  - name: "portfolio"
+    label: "Portfolio"
+    files:
+
+      - label: "All Categories & Projects"
+        name: "projects"
+        file: "data/projects.json"
+        description: "Add or edit categories and the projects inside them."
+        fields:
+
+          - label: "Categories"
+            name: "root"
+            widget: "list"
+            label_singular: "Category"
+            summary: "{{fields.label}}"
+            fields:
+
+              - label: "Category ID"
+                name: "id"
+                widget: "string"
+                hint: "Lowercase slug, no spaces — e.g. adverts, brochures, events"
+
+              - label: "Category Label"
+                name: "label"
+                widget: "string"
+                hint: "Displayed in the category bar — e.g. Adverts"
+
+              - label: "Sort Order"
+                name: "sortOrder"
+                widget: "number"
+                value_type: "int"
+                default: 99
+                hint: "Lower numbers appear first (1 = leftmost tab)"
+
+              - label: "Projects"
+                name: "projects"
+                widget: "list"
+                label_singular: "Project"
+                summary: "{{fields.title}} ({{fields.date}})"
+                fields:
+
+                  - label: "Project ID"
+                    name: "id"
+                    widget: "string"
+                    hint: "Unique slug — e.g. my-project-2026"
+
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+
+                  - label: "Date"
+                    name: "date"
+                    widget: "datetime"
+                    format: "YYYY-MM-DD"
+                    date_format: "DD/MM/YYYY"
+                    time_format: false
+
+                  - label: "Client Type"
+                    name: "clientType"
+                    widget: "string"
+                    hint: "e.g. Community Adverts, Housing, Service Providers"
+
+                  - label: "Tags"
+                    name: "tags"
+                    widget: "list"
+                    allow_add: true
+                    field:
+                      label: "Tag"
+                      name: "tag"
+                      widget: "string"
+
+                  - label: "Items (Images & PDFs)"
+                    name: "items"
+                    widget: "list"
+                    label_singular: "Item"
+                    summary: "{{fields.type}}{{fields.name}}"
+                    fields:
+
+                      - label: "Type"
+                        name: "type"
+                        widget: "select"
+                        options:
+                          - { label: "🖼  Image", value: "image" }
+                          - { label: "📄  PDF",   value: "pdf" }
+
+                      - label: "File"
+                        name: "url"
+                        widget: "file"
+                        hint: "Upload an image (JPG/PNG/WEBP) or a PDF"
+
+                      - label: "Display Name (PDF only)"
+                        name: "name"
+                        widget: "string"
+                        required: false
+                        hint: "Shown under PDF tiles. Leave blank for images."

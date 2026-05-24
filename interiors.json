@@ -1,0 +1,32 @@
+{
+  "id": "interiors",
+  "label": "Interiors",
+  "sortOrder": 4,
+  "projects": [
+    {
+      "id": "interior-living-ads",
+      "title": "Interior / Living Space Ads",
+      "date": "2026-02-08",
+      "clientType": "Lifestyle Ads",
+      "tags": [
+        "Flyers",
+        "Promos",
+        "Visuals"
+      ],
+      "items": [
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_interior-of-modern-living-room-with-green-walls-wooden_27065264.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_elegant-interior-showcasing-a-spacious-living-area-and_66491660.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_a-red-push-pin-is-on-a-map-of-a-city_30759869.JPG"
+        }
+      ]
+    }
+  ]
+}

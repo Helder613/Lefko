@@ -1,0 +1,61 @@
+{
+  "id": "adverts",
+  "label": "Adverts",
+  "sortOrder": 1,
+  "projects": [
+    {
+      "id": "yiddish-adverts-set-1",
+      "title": "Yiddish Adverts — Set 1",
+      "date": "2026-02-08",
+      "clientType": "Community Adverts",
+      "tags": [
+        "Flyers",
+        "Adverts",
+        "Print"
+      ],
+      "items": [
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/ChatGPT%20Image%20Feb%208%2C%202026%2C%2005_32_47%20PM.png"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/ChatGPT%20Image%20Feb%208%2C%202026%2C%2005_25_44%20PM.png"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/ChatGPT%20Image%20Feb%208%2C%202026%2C%2005_22_56%20PM.png"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/ChatGPT%20Image%20Feb%208%2C%202026%2C%2004_54_11%20PM.png"
+        }
+      ]
+    },
+    {
+      "id": "tools-services-adverts",
+      "title": "Services / Tools Advert Set",
+      "date": "2026-02-08",
+      "clientType": "Service Providers",
+      "tags": [
+        "Announcements",
+        "Adverts",
+        "Graphics"
+      ],
+      "items": [
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_set-of-hand-working-tools-on-ceramic-tile-background_11933528.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_contact-us-business-concept-idea_4963818.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_contact-us-or-customer-support-hotline-people-connect_16850790.jpg"
+        }
+      ]
+    }
+  ]
+}

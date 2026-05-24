@@ -1,0 +1,27 @@
+{
+  "id": "logos",
+  "label": "Logos",
+  "sortOrder": 3,
+  "projects": [
+    {
+      "id": "property-visual-set",
+      "title": "Property Visual Set (for branding)",
+      "date": "2026-02-08",
+      "clientType": "Property",
+      "tags": [
+        "Branding",
+        "Visuals"
+      ],
+      "items": [
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_aerial-view-of-beautiful-white-luxury-mansion-surrounded-by_69537168.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_high-angle-view-of-western-luton-city-and-residential_27584659.JPG"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/admin"
+  to   = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to   = "/admin/index.html"
+  status = 200
+
+# Required for Netlify Identity widget
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"

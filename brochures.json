@@ -1,0 +1,33 @@
+{
+  "id": "brochures",
+  "label": "Brochures",
+  "sortOrder": 2,
+  "projects": [
+    {
+      "id": "housing-brochure-sample",
+      "title": "Housing Brochure Sample (PDF + Images)",
+      "date": "2026-02-08",
+      "clientType": "Housing",
+      "tags": [
+        "Brochure",
+        "Layout",
+        "PDF"
+      ],
+      "items": [
+        {
+          "type": "pdf",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/DLUHC_How_to_rent_Oct2023%20(1).pdf",
+          "name": "How to rent (sample).pdf"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_row-of-historic-white-townhouses-with-terraces-and-potted_73473654.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "https://tumbleweed-numbat-3547.twil.io/assets/vecteezy_colorful-row-houses-in-london_76593202.jpg"
+        }
+      ]
+    }
+  ]
+}
